@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https:\\cdn.tailwindcss.com"></script>
+<body class=" flex justify-center items-center ">
+    <div class="flex-col justify-center h-95 w-96  bg-gray-500 mt-32">
+    <div class="loan ml-32">Loan Calulator</div>
+    <label class=" mt-16 ml-32"> loan Amount:</label><br>
+    <input class=" mt-8 ml-32" id ="loanAmount"><br>
+    <label class=" mt-8 ml-32"> Interest Rate(%):</label><br>
+    <input class=" mt-8 ml-32"  id="Interest"><br>
+    <label  class=" mt-8 ml-32"> loan Term(in months)</label><br>
+    <input class=" mt-8 ml-32" id="loanTerm"><br>
+    <button class=" mt-16 ml-40 bg-blue-500 rounded-md" onclick=calculate()>Calculate</button>
+    <div class="result mt-8 ml-32 " id="result">final result</div>
+</div>
+<script src="loancalculator.js"></script>
+</body>
+</html>

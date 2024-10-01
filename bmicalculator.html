@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script></head>
+
+</head>
+<body class="flex justify-center items-center min-h-screen bg-blue-700 ">
+    <div class="bmiCalculator flex-col justify-center items-center h-96 w-96 mt-36  bg-slate-400">
+<span class="">BMI CALCULATOR</span><br>
+<lable>Gender:</lable><br>
+
+
+<select id="gender" class="gender">
+    <option>Male</option>
+    <option>Female</option>
+</select><br>
+<lable>age:</lable><br>
+
+<input id="age" class="age" type="number" min="0" placeholder="Enter your age"><br>
+<lable>Height</lable><br>
+<input id="height-ft" class="height-ft" type="number" min="0" placeholder="Enter height in feat"><br>
+<input id="height-inch" class="height-inch" type="number" min="0" max="12" placeholder="Enter your hegigh in inches"><br>
+<lable>weight</lable><br>
+<input id="weight" class="weight" type="number" min="0"><br>
+<button onclick="calculateBmi()" class=" bg-slate-300"> Calculate</button>
+<div class="show" id="show"></div>
+    </div>
+   
+
+</body>
+<script src="bmicalculator.js"></script>
+
+</html>
