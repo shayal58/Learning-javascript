@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center bg-slate-500 ">
+    <div class=" bg-white">
+        <div class="flex justify-center">RGB color generator </div>
+        <div class="rgbcolor w-96 h-96 bg-white"> </div>
+        <div class="flex-col justify-center">
+<div class="flex justify-center my-2">
+
+
+            <label>Red</label>
+            <input type="range" min="0" max="255" id="red" >
+            <span class="redvalue" >0</span>
+        </div>
+        <div class="flex justify-center my-2">
+            <label>green</label>
+            <input type="range" min="0" max="255" id="green">
+            <span class="greenvalue">0</span>
+        </div><div class="flex justify-center my-1 mb-5">
+            <label>Blue</label>
+            <input type="range" min="0" max="255" id="blue">
+            <span class="bluevalue" >0</span>
+        </div>
+            <div class="flex justify-center">
+            <button class="copy bg-fuchsia-400 rounded "  >Copy Rgb blue</button>
+            <span class="show bg-red-300 ml-5 rounded px-5">Rgb(1,2,3)</span>
+        </div>
+        </div>
+    </div>
+    
+</body>
+<script src="rgb.js"></script>
+</html>
